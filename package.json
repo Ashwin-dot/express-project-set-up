@@ -12,8 +12,12 @@
     "prettier:fix": "npx prettier . --write",
     "prettier:check": "npx prettier . --check",
     "prepare": "husky"
-  }, "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["npm run prettier:fix", "npm run lint:fix"]
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npm run prettier:fix",
+      "npm run lint:fix"
+    ]
   },
   "repository": {
     "type": "git",
